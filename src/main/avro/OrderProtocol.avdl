@@ -1,0 +1,17 @@
+@namespace("ru.yandex.practicum.avro")
+protocol OrderProtocol {
+	record Order {
+		string orderId;
+		string customerName;
+		array<Product> products;
+		float totalAmount;
+		timestamp_ms timestamp;
+		string? comment = null;
+	}
+
+	record Product {
+		string productId;
+		string name;
+		float price;
+	}
+}
