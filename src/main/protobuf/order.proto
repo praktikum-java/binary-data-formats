@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package ru.yandex.practicum.protobuf;
+
+import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+option java_package = "ru.yandex.practicum.proto.order";
+
+message Product {
+  string productId = 1;
+  string name = 2;
+  float price = 3;
+}
+
+message Order {
+  string orderId = 1;
+  string customerName = 2;
+  repeated Product products = 3;
+  float totalAmount = 4;
+  google.protobuf.Timestamp timestamp = 5;
+  string comment = 6;
+}
