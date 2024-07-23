@@ -1,5 +1,0 @@
-@namespace("ru.yandex.practicum.avro")
-protocol UserProtocol {
-	// Опишите схему в соответствии с заданием
-	//  ...
-}

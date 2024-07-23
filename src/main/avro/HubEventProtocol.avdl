@@ -1,0 +1,4 @@
+@namespace("ru.yandex.practicum.avro")
+protocol HubEventProtocol {
+
+}
