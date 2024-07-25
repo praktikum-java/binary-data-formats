@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package ru.yandex.practicum.protobuf;
+
+import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+option java_package = "ru.yandex.practicum.proto.order";
+
+// Опишите схему в соответствии с заданием
