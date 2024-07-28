@@ -1,0 +1,10 @@
+@namespace("ru.practicum.yandex.avro")
+protocol WeatherProtocol {
+
+	record WeatherEvent {
+		double latitude;
+		double longitude;
+		double temperature;
+	}
+
+}
