@@ -7,6 +7,7 @@ import ru.yandex.practicum.avro.User;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.HexFormat;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -33,10 +34,10 @@ public class AvroAssignment1 {
                 .setId(1)
                 .setInterests(List.of("swimming", "coding"))
                 .setBirthdate(LocalDate.of(2024, 1, 1))
-                .setContacts(Map.of(
+                .setContacts(new LinkedHashMap<>(Map.of(
                         "Ivan", "+7 (123) 456-78-13",
                         "Maria", "+7 (456) 789-12-34"
-                ))
+                )))
                 .build();
     }
 }
