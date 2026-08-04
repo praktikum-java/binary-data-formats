@@ -27,6 +27,9 @@ public class AvroAssignment1 {
 
     // этот метод менять нельзя!
     public static User getUser() {
+        LinkedHashMap<String, String> contacts = new LinkedHashMap<>();
+        contacts.put("Ivan", "+7 (123) 456-78-13");
+        contacts.put("Maria", "+7 (456) 789-12-34");
         return User.newBuilder()
                 .setFirstName("Abcde")
                 .setGender(Gender.male)
@@ -34,10 +37,7 @@ public class AvroAssignment1 {
                 .setId(1)
                 .setInterests(List.of("swimming", "coding"))
                 .setBirthdate(LocalDate.of(2024, 1, 1))
-                .setContacts(new LinkedHashMap<>(Map.of(
-                        "Ivan", "+7 (123) 456-78-13",
-                        "Maria", "+7 (456) 789-12-34"
-                )))
+                .setContacts(contacts)
                 .build();
     }
 }
